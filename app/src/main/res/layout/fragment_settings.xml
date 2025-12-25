@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="horizontal"
+    android:padding="30dp"
+    tools:context="Fragments.SettingsFragment">
+
+    <!-- بطاقة إدارة الطاولات -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bttabel"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/img_tables"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_table_restaurant_24"
+                app:tint="#BF360C" />
+
+            <TextView
+                android:id="@+id/tv_tables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="إدارة الطاولات"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- بطاقة إدارة المطاعم -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/img_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/baseline_restaurant_24"
+                app:tint="#FF9800" />
+
+            <TextView
+                android:id="@+id/tv_restaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="إدارة المطاعم"
+                android:textStyle="bold"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
