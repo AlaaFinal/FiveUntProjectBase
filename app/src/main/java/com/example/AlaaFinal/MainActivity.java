@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Stud> stdList = new ArrayList<>();
     private DALAppWriteConnection dal;
     
-    // الحقول الجديدة
+    // الحقول الجديدة fff
     EditText etName;
     TextView tvSelectedDate, tvImageIcon;
     ImageView ivPreview;
