@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">AlaaFinal</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">إدارة مطعم</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tables_manage">إدارة الطاولات</string>
+    <string name="tables_add">إضافة طاولة</string>
+    <string name="tables_save">حفظ</string>
+    <string name="table_status_available">متاحة</string>
+    <string name="table_status_reserved">محجوزة</string>
 </resources>

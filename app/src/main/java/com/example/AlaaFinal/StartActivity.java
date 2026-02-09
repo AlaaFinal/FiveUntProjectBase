@@ -31,7 +31,11 @@ public class StartActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_start);
 
-        btm=findViewById(R.id.btmenu);
+        btm = findViewById(R.id.btmenu);
+
+        if (savedInstanceState == null) {
+            ChangeFragment(new HomeFragment());
+        }
 
         btm.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override

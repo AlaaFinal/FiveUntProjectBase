@@ -7,8 +7,8 @@ public class Restaurant
     public ArrayList<Table> tables;
 
     public Restaurant(String name, ArrayList<Table> tables) {
-        name = name;
-        tables = tables;
+        this.name = name;
+        this.tables = tables;
     }
 
     public Restaurant() {
@@ -23,7 +23,7 @@ public class Restaurant
     }
 
     public void setName(String name) {
-        name = name;
+        this.name = name;
     }
 
     public void setTables(ArrayList<Table> tables) {

@@ -20,6 +20,10 @@
     <color name="warning">#FFFF9800</color>              <!-- تحذير -->
     <color name="info">#FF2196F3</color>                  <!-- معلومات -->
     
+    <!-- الطاولات -->
+    <color name="table_available">#FF4CAF50</color>       <!-- متاحة -->
+    <color name="table_reserved">#FFFF9800</color>       <!-- محجوزة -->
+
     <!-- خلفية -->
     <color name="background">#FFF5F5F5</color>           <!-- خلفية فاتحة -->
     <color name="surface">#FFFFFFFF</color>               <!-- سطح (البطاقات) -->

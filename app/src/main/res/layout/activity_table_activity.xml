@@ -4,54 +4,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="50dp"
+    android:padding="16dp"
     tools:context=".TableActivity">
 
-    <!-- أزرار الرجوع والحفظ في الأعلى -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
         <ImageButton
             android:id="@+id/btback"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="رجوع"
             android:src="@android:drawable/ic_media_previous"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="إدارة الطاولات"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/btsave"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="Save"/>
+            android:text="حفظ"/>
     </LinearLayout>
 
-    <!-- عنوان الصفحة -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tables"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="8dp"
+        android:text="أضف طاولات وحدّد حالة الحجز من البطاقة."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"/>
 
-    <!-- قائمة الطاولات RecyclerView -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/tableRecycler"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:paddingTop="10dp" />
+        android:clipToPadding="false"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"/>
 
-    <!-- زر إضافة الطاولة -->
     <Button
         android:id="@+id/btaddtable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add Table"
-        android:layout_marginTop="10dp" />
-
+        android:text="إضافة طاولة"
+        android:layout_marginTop="8dp"/>
 </LinearLayout>

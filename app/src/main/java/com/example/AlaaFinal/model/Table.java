@@ -1,6 +1,7 @@
 package com.example.AlaaFinal.model;
 
 public class Table {
+    public String id;
     public String tableName;
     public int tableNumber;
     public int seatsNum;
@@ -8,6 +9,7 @@ public class Table {
     public boolean isReserved;
 
     public Table(String tableName, int tableNumber, int seatsNum, int customersNum, boolean isReserved) {
+        this.id = "t_" + System.currentTimeMillis() + "_" + (int)(Math.random() * 10000);
         this.tableName = tableName;
         this.tableNumber = tableNumber;
         this.seatsNum = seatsNum;
@@ -16,7 +18,11 @@ public class Table {
     }
 
     public Table() {
+        this.id = "t_" + System.currentTimeMillis() + "_" + (int)(Math.random() * 10000);
     }
+
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
 
     public String getTableName() {
         return tableName;
